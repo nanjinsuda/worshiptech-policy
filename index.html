@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>워십테크 개인정보처리방침</title>
+<style>
+  body { font-family: -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; line-height: 1.7; color: #222; max-width: 720px; margin: 0 auto; padding: 32px 20px 64px; }
+  h1 { font-size: 1.6rem; border-bottom: 2px solid #222; padding-bottom: 12px; }
+  h2 { font-size: 1.15rem; margin-top: 2em; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+  th, td { border: 1px solid #ccc; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: #f5f2f0; }
+  .date { color: #666; font-size: 0.95rem; }
+</style>
+</head>
+<body>
+<h1>워십테크 개인정보처리방침</h1>
+<p class="date">시행일: 2026년 7월 4일</p>
+
+<p>워십테크(이하 "앱")는 교회 사운드팀의 예배 준비·운영(일정/배정, 큐시트, 체크리스트, 팀 채팅, 음향 측정)을 돕는 팀 내부용 앱입니다. 본 방침은 앱이 어떤 정보를 수집하고 어떻게 이용·보관·삭제하는지 설명합니다.</p>
+
+<h2>1. 수집하는 정보</h2>
+<table>
+  <tr><th>항목</th><th>내용</th><th>시점</th></tr>
+  <tr><td>계정 정보</td><td>이메일 주소, 비밀번호(암호화 저장)</td><td>가입·로그인 시</td></tr>
+  <tr><td>프로필 정보</td><td>이름, 역할(관리자/멤버), 담당 포지션</td><td>가입 승인 시</td></tr>
+  <tr><td>채팅 콘텐츠</td><td>메시지 본문, 첨부한 사진·동영상</td><td>사용자가 전송할 때</td></tr>
+  <tr><td>서비스 이용 데이터</td><td>봉사 일정·배정·출석 응답, 체크리스트 체크 상태, 큐시트 개인 메모</td><td>해당 기능 사용 시</td></tr>
+  <tr><td>푸시 토큰</td><td>기기 알림 발송용 토큰(Android: FCM, iOS: APNs)</td><td>알림을 켠 경우</td></tr>
+</table>
+
+<p>앱은 위 항목 외의 정보를 수집하지 않습니다. 특히:</p>
+<ul>
+  <li><strong>마이크(음향 측정)</strong>: SPL/RTA 측정은 전부 기기 안에서만 처리되며, 오디오가 저장되거나 서버로 전송되지 않습니다.</li>
+  <li><strong>카메라·사진 보관함</strong>: 채팅에 첨부할 사진·동영상을 선택/촬영할 때만 접근하며, 사용자가 전송한 파일만 업로드됩니다.</li>
+  <li><strong>광고·추적 없음</strong>: 광고 SDK, 추적(트래킹), 제3자 분석 도구를 사용하지 않습니다.</li>
+  <li><strong>위치정보를 수집하지 않습니다.</strong></li>
+</ul>
+
+<h2>2. 이용 목적</h2>
+<ol>
+  <li>계정 인증 및 팀원 승인 관리</li>
+  <li>봉사 일정·배정 안내 및 출석 확인</li>
+  <li>팀 채팅(메시지·미디어 공유) 제공</li>
+  <li>배정·채팅 등 앱 활동에 대한 푸시 알림 발송</li>
+</ol>
+
+<h2>3. 보관 및 처리 위탁</h2>
+<ul>
+  <li>데이터는 클라우드 데이터베이스 서비스 <strong>Supabase</strong>에 암호화된 통신(HTTPS)으로 저장됩니다. 채팅 첨부 파일은 비공개 저장소에 보관되며 팀 채널 구성원만 접근할 수 있습니다.</li>
+  <li>푸시 알림 발송을 위해 푸시 토큰이 <strong>Google FCM</strong>(Android) 또는 <strong>Apple APNs</strong>(iOS)를 경유합니다.</li>
+  <li>위 서비스 제공자 외의 제3자에게 개인정보를 제공하거나 판매하지 않습니다.</li>
+</ul>
+
+<h2>4. 보유 기간 및 계정 삭제</h2>
+<ul>
+  <li>정보는 팀 구성원으로 활동하는 동안 보관됩니다.</li>
+  <li>사용자는 <strong>앱 내 프로필 화면의 [계정 삭제]</strong> 에서 언제든 계정 삭제를 요청할 수 있습니다.</li>
+  <li>삭제 요청 시 계정은 즉시 비활성화되어 앱 접근이 차단되며, <strong>30일 유예 기간</strong> 후 프로필, 개인 메모, 작성한 채팅 메시지와 사진·동영상이 서버에서 영구 삭제됩니다. 유예 기간 중 취소를 원하면 관리자에게 문의하세요.</li>
+  <li>공지·배정 기록 등 팀 공용 운영 기록은 삭제 대신 작성자 연결이 해제된 채 보존됩니다.</li>
+</ul>
+
+<h2>5. 알림 수신 거부</h2>
+<p>푸시 알림은 기기 설정 또는 앱 내 프로필 화면의 알림 스위치로 언제든 끌 수 있습니다. 알림을 끄면 이 기기의 푸시 토큰이 서버에서 삭제됩니다.</p>
+
+<h2>6. 아동의 개인정보</h2>
+<p>이 앱은 교회 사운드팀 성인 구성원을 위한 초대(승인)제 앱으로, 아동을 대상으로 하지 않습니다.</p>
+
+<h2>7. 문의처</h2>
+<p>개인정보 처리에 관한 문의는 아래로 연락해 주세요.</p>
+<ul><li>이메일: dhnp1410@gmail.com</li></ul>
+
+<h2>8. 방침 변경</h2>
+<p>본 방침이 변경되는 경우 이 페이지를 통해 공지하며, 중요한 변경은 앱 알림 등으로 안내합니다.</p>
+</body>
+</html>
